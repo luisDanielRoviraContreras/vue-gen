@@ -1,0 +1,24 @@
+{
+  "name": "vue-gen",
+  "version": "1.0.0",
+  "description": "A generator CLI for Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelodeandrade/vue-gen.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "generator"
+  ],
+  "author": "Marcelo de Andrade <andrade.asmarcelo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelodeandrade/vue-gen/issues"
+  },
+  "homepage": "https://github.com/marcelodeandrade/vue-gen#readme"
+}

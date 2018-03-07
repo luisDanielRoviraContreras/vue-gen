@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/marcelodeandrade/vue-gen/issues"
   },
-  "homepage": "https://github.com/marcelodeandrade/vue-gen#readme"
+  "homepage": "https://github.com/marcelodeandrade/vue-gen#readme",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "commander": "^2.14.1"
+  }
 }

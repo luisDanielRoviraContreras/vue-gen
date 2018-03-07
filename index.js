@@ -17,6 +17,7 @@ const generate = (name, options) => {
 
 program
     .arguments('<name>')
+    .option('-s, --single', 'Componente Single-File')
     .version('0.0.1')
     .action(generate);
 program.parse(process.argv);

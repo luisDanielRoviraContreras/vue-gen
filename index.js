@@ -14,6 +14,7 @@ const generate = (name, options) => {
     const templatePath = `${__dirname}/templates/${templateType}`;
 
     const newComponentPath = `${componentsPath}/${name}`;
+    fse.removeSync(newComponentPath);
     fse.ensureDirSync(newComponentPath)
     
     const filesToCreate = fs.readdirSync(templatePath);

@@ -5,10 +5,10 @@ const program = require('commander');
 const fse = require('fs-extra')
 const fs = require('fs');
 
-const componentsPath = `${__dirname}/src/components`;
-fse.ensureDirSync(componentsPath)
-
 const generate = (name, options) => {
+    
+    const componentsPath = `${__dirname}/src/components`;
+    fse.ensureDirSync(componentsPath)
     
     const templateType = options.single ? 'single' : 'split';
     const templatePath = `${__dirname}/templates/${templateType}`;

@@ -3,7 +3,7 @@
 
 const program = require('commander');
 const fse = require('fs-extra')
-const fs = require('fs');
+const path = require('path');
 
 const generate = (name, options) => {
     
@@ -17,15 +17,16 @@ const generate = (name, options) => {
     fse.removeSync(newComponentPath);
     fse.ensureDirSync(newComponentPath)
     
-    const filesToCreate = fs.readdirSync(templatePath);
+    const filesToCreate = fse.readdirSync(templatePath);
 
     filesToCreate.forEach(file => {
       
       const templateFilePath = `${templatePath}/${file}`;
-      const templateFileContent = fs.readFileSync(templateFilePath, 'utf8');
+      const templateFileContent = fse.readFileSync(templateFilePath, 'utf8');
+      const newComponentFile = `${newComponentPath}/${file.replace('component', name)}`;
 
-      const newComponentFile = `${newComponentPath}/${file}`;
-      fse.outputFileSync(newComponentFile, templateFileContent)
+      fse.outputFileSync(newComponentFile, templateFileContent);
+
     });
 }
 

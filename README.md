@@ -56,6 +56,6 @@ vuegen -s <component name>
 
 ## TODO
 
-- Change component file name
-- Change component property name
-
+- [x] Change component file name
+- [x] Change component property name
+- [ ]

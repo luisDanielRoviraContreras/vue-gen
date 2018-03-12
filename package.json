@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/marcelodeandrade/vue-gen#readme",
   "dependencies": {
+    "camelcase": "^4.1.0",
     "commander": "^2.14.1",
     "fs-extra": "^5.0.0"
   },

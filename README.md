@@ -33,10 +33,10 @@ vuegen <component name>
 src/
 └── components
     └── test
-        ├── component.css
-        ├── component.js
-        ├── component.spec.js
-        └── component.vue
+        ├── <component name>.css
+        ├── <component name>.js
+        ├── <component name>.spec.js
+        └── <component name>.vue
 ```
 
 ### Generate Component Single-File
@@ -50,8 +50,8 @@ vuegen -s <component name>
 ```bash
 └── components
     └── test
-        ├── component.spec.js
-        └── component.vue
+        ├── <component name>.spec.js
+        └── <component name>.vue
 ```
 
 ## TODO

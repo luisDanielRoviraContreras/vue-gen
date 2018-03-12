@@ -25,7 +25,7 @@ const generate = (name, options) => {
       const templateFileContent = fse.readFileSync(templateFilePath, 'utf8');
       const newComponentFile = `${newComponentPath}/${file.replace('component', name)}`;
 
-      fse.outputFileSync(newComponentFile, templateFileContent);
+      fse.outputFileSync(newComponentFile, templateFileContent.replace("component", name));
 
     });
 }

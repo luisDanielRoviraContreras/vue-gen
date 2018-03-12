@@ -32,7 +32,7 @@ vuegen <component name>
 ```bash
 src/
 └── components
-    └── test
+    └── <component name>
         ├── <component name>.css
         ├── <component name>.js
         ├── <component name>.spec.js
@@ -49,7 +49,7 @@ vuegen -s <component name>
 
 ```bash
 └── components
-    └── test
+    └── <component name>
         ├── <component name>.spec.js
         └── <component name>.vue
 ```

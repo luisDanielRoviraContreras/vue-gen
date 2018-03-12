@@ -1,5 +1,5 @@
 "use strict";
 
-describe("Component Test", function() {
+describe("component Test", function() {
     
 });
